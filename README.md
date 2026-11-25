@@ -34,10 +34,13 @@ The app works without an AI key using its local personalised recommendation engi
 The Worker accepts POST requests at /recommend, validates and limits input, asks Gemini for structured JSON and returns recommendation fields. CORS is permissive for this demo. For production, restrict Access-Control-Allow-Origin to your deployed website domain and add rate limiting.
 
 ## Publish with GitHub Pages
+A GitHub Actions workflow is included at .github/workflows/pages.yml.
 1. Open repository Settings → Pages.
-2. Under Build and deployment, select Deploy from a branch.
-3. Choose branch main and folder / (root), then Save.
-4. Wait for GitHub Pages to publish. Expected URL: https://shuva04.github.io/ClearAir/
+2. Under Build and deployment, set Source to GitHub Actions.
+3. Open the Actions tab and confirm the Deploy ClearAir to GitHub Pages workflow completes successfully (it runs on pushes to main).
+4. Expected website URL: https://shuva04.github.io/ClearAir/
+
+GitHub Pages is not automatically enabled by a repository file; the one-time Pages source selection in Settings is required.
 
 ## Safety and limitations
 ClearAir is educational, not medical advice. Follow local public-health guidance, especially during severe pollution events. A particulate respirator does not remove pollutant gases. Do not make medical decisions based only on this app. A modelled AQI grid value is not a station reading.
