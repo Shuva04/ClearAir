@@ -11,6 +11,10 @@ ClearAir is a responsive air-quality companion for families and communities. It 
 - Daily checklist and selected city saved in browser localStorage.
 - Responsive, dependency-free static frontend.
 
+## Automated tests
+
+Core recommendation, AQI categorisation and formatting helpers are covered by Node.js tests. Run `node --test tests/core.test.js` (Node 18+).
+
 ## Run locally
 Open index.html in a browser or serve this folder with a static web server. Geolocation generally requires HTTPS or localhost.
 
